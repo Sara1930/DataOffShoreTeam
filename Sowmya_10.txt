@@ -1,0 +1,19 @@
+FSImage file and Edit log
+
+FSimage file contains the state of File system. And for each modification it will create unique transcation id. It will keep the snapshot of file system.
+
+
+Edit log
+
+When a file system modified,renamed those information will store in a Edit log.
+
+Example 
+
+consider we have file like Abc.txt in File system it has taken as snapshot in FSimage.
+
+After that we modified Abc.txt as Xyz.txt and from Xyz.txt to New.txt
+
+In FSImage we can see the file Abc.txt.
+
+In Edit log we can the modification after the snapshot Abc.txt i.e Xyz.txt and New.txt
+
